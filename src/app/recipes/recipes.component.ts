@@ -9,7 +9,6 @@ import { Recipe } from '../shared/Model/Recipe/Recipe.model';
   providers: [RecipesService]
 })
 export class RecipesComponent implements OnInit {
-  placeholderText = 'Please select a recipe';
   selectedRecipe: Recipe;
 
   constructor(private recipeSrv: RecipesService) { }
