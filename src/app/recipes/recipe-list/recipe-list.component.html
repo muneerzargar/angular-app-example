@@ -6,8 +6,8 @@
     
     <div class="col-xs-12">
         <ul>
-            <li *ngFor= "let recipe of recipeList">
-                <app-recipe-item [recipe] = recipe></app-recipe-item>
+            <li *ngFor= "let recipe of recipeList; let i = index">
+                <app-recipe-item [recipe] = recipe [recipeIndex] = i ></app-recipe-item>
             </li>
         </ul>
     </div>
