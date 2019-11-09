@@ -31,6 +31,11 @@ export class RecipesService {
     return newRecipes;
   }
 
+  getRecipeById(id: number) {
+    const recipeList = [...this.recipeList];
+    return recipeList[id];
+  }
+
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.shoppingListSrv.addIngredientList(ingredients);
   }
