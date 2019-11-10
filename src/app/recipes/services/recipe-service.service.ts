@@ -2,12 +2,13 @@ import { Injectable, EventEmitter } from '@angular/core';
 import { Recipe } from 'src/app/shared/Model/Recipe/Recipe.model';
 import { Ingredient } from 'src/app/shared/Model/Ingredient/ingredient.model';
 import { ShoppingListService } from 'src/app/shopping-list/services/shoppingList/shoppingList.service';
+// import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RecipesService {
-  public recipeSelected = new EventEmitter<Recipe>();
+  // public recipeSelected = new Subject<Recipe>();
   private recipeList: Recipe[] = [
     {name: 'Recipe1', description: 'Description1', imagePath: 'https://cdn.pixabay.com/photo/2014/10/22/16/38/ingredients-498199_1280.jpg',
     ingredients: [{name: 'cherry', amount: 5}, {name: 'oranges', amount: 1}]
